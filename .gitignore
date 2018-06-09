@@ -6,4 +6,3 @@ models
 *.p
 checkpoint
 lenet*
-traffic-signs-data
