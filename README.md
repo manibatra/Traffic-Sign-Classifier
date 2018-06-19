@@ -7,7 +7,6 @@ The goals / steps of this project are the following:
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture achieving a minimum validation accuracy of 93%.
 * Use the model to make predictions on new images
-* Analyze the softmax probabilities of the new images
 - - - -
 
 ### Dataset
@@ -93,7 +92,7 @@ Images after extracting the Y channel and normalization :
 
 <img src="images/after-norm.png" width="400">
 
-The incorrect prediction was for the road works image. This can be corrected in the future by using better normalization technique/preprocessing in the future. 
+The incorrect prediction was for the road works image. This can be corrected in the future by using better normalization technique/preprocessing. 
 
 ### Conclusion
 
