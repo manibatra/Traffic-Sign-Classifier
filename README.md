@@ -11,7 +11,7 @@ The goals / steps of this project are the following:
 
 ### Dataset
 
-The dataset used in this project was the **[German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)** which consists of **39, 209** images with dimensions **32x32x3** (height x width x channels) for training and **12, 630**  images for testing. The photographs are of German Traffic Signs and belong to one of the 43 types which can be mapped to the names of the traffic signs **[here](signnames.csv)**. The following is a visualisation of an image from each of the classes. 
+The dataset used in this project was the **[German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)** which consists of **39,209** images with dimensions **32x32x3** (height x width x channels) for training and **12,630**  images for testing. The photographs are of German Traffic Signs and belong to one of the 43 types which can be mapped to the names of the traffic signs **[here](signnames.csv)**. The following is a visualisation of an image from each of the classes. 
 
 ![all traffic signs](images/all-traffic-signs.png)
 
@@ -52,7 +52,7 @@ Increasing the amount of data led to an increase in the validation accuracy thus
 
 ### Preprocessing
 
-The preprocessing of the images involved converting the image to single channel. The **Y channel** from the **YUV channel** was used as suggested by **[this paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf)**. The single channel images were then normalized. A number of different normalization techniques were tried out
+The preprocessing of the images involved converting the image to a single channel. The **Y channel** from the **YUV channels** was used as suggested by **[this paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf)**. The single channel images were then normalized. A number of different normalization techniques were tried out
 
 - Min Max Normalization
 - Histogram Equalization
@@ -64,7 +64,7 @@ Out of these 3 histogram equalization led to the highest validation accuracy. Th
 
 ### Model
 
-A **multi-scale features** model was used instead of strict feed forward CNN. The model was inspired by  **[this paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf)**.  In this model output from the first convolutional layer was fed into the fully connected layer along with the output from the second convolutional layer. Increasing the number of filters at each convolutional layer to **108** was tried. This led to an increase in the validation accuracy but also led to increase in the time required to training the model. Instead of increasing the number of filters adding another convolutional layer should be tried in the future and the results compared. 
+A **multi-scale features** model was used instead of strict feed forward CNN. The model was inspired by  **[this paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf)**.  In this model output from the first convolutional layer was fed into the fully connected layer along with the output from the second convolutional layer. Increasing the number of filters at each convolutional layer to **108** was tried. This led to an increase in the validation accuracy but also led to increase in the time required to train the model. Instead of increasing the number of filters adding another convolutional layer should be tried in the future and the results compared. 
 
 ![model arch](images/model-arch.png)
 
@@ -76,7 +76,7 @@ The model was trained for **40 epochs** due to time/budget constraints which too
 
 ### Testing
 
-The test accuracy of **96.7** was achieved which was less than the validation accuracy of **98.7** which was better than the initial goal of the project. This can be further improved adding more dropout/regularization techniques and creating a more balanced dataset. 
+The test accuracy of **96.7** was achieved which was less than the validation accuracy of **98.7**. The validation accuracy was better than the initial goal of the project. This can be further improved by adding more dropout/regularization techniques and creating a more balanced dataset. 
 
 The model was then tested on 5 random images of the german traffic signs. These images were of different resolutions. They were first down sampled to 32 x 32, then the **Y Channel** was extracted and then they were normalized. An accuracy of 80% was achieved on these images. 
 
