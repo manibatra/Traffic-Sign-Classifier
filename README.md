@@ -60,7 +60,7 @@ The preprocessing of the images involved converting the image to single channel.
 
 Out of these 3 histogram equalization led to the highest validation accuracy. The code for these normalization techniques is included in the accompanying jupyter notebook.  Here we can see an image before and after normalization. 
 
-![after normalization](images/before-after-norm.jpg)
+![after normalization](images/before-after-norm.png)
 
 ### Model
 
