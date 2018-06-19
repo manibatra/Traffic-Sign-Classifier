@@ -67,7 +67,7 @@ Out of these 3 histogram equalization led to the highest validation accuracy. Th
 
 A **multi-scale features** model was used instead of strict feed forward CNN. The model was inspired by  **[this paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf)**.  In this model output from the first convolutional layer was fed into the fully connected layer along with the output from the second convolutional layer. Increasing the number of filters at each convolutional layer to **108** was tried. This led to an increase in the validation accuracy but also led to increase in the time required to training the model. Instead of increasing the number of filters adding another convolutional layer should be tried in the future and the results compared. 
 
-![model arch](images/model-arch.jpg)
+![model arch](images/model-arch.png)
 
 As the model was overfitting ( test accuracy < validation accuracy) a  **dropout of 0.5** was applied after the fully connected layer. This led to an increase in the test accuracy but overfitting was not completely eliminated. Further applying dropout after convolutional layers should prevent the model from overfitting. 
 
@@ -81,13 +81,17 @@ The test accuracy of **96.7** was achieved which was less than the validation ac
 
 The model was then tested on 5 random images of the german traffic signs. These images were of different resolutions. They were first down sampled to 32 x 32, then the **Y Channel** was extracted and then they were normalized. An accuracy of 80% was achieved on these images. 
 
+Original Images : 
 
-![initial images](images/initial-new.jpg)
+<img src="images/initial-new.png" width="400">
 
+Images after down sampling to 32x32 :
 
-![before normalization](images/before-norm.jpg)
+<img src="images/before-norm.png" width="400">
 
-![after normalization](images/after-norm.jpg)
+Images after extracting the Y channel and normalization :
+
+<img src="images/after-norm.png" width="400">
 
 The incorrect prediction was for the road works image. This can be corrected in the future by using better normalization technique/preprocessing in the future. 
 
