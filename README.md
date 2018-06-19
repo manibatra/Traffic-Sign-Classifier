@@ -11,7 +11,7 @@ The goals / steps of this project are the following:
 
 ### Dataset
 
-The dataset used in this project was the **[German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)** which consists of **39, 209** images with dimensions **32x32x3** (height x width x channels) for training and **12, 630**  images for testing. The photographs are of German Traffic Signs and belong to one of the 43 types which can be mapped to the names of the traffic signs **[here]()**. The following is a visualisation of an image from each of the classes. 
+The dataset used in this project was the **[German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)** which consists of **39, 209** images with dimensions **32x32x3** (height x width x channels) for training and **12, 630**  images for testing. The photographs are of German Traffic Signs and belong to one of the 43 types which can be mapped to the names of the traffic signs **[here](signnames.csv)**. The following is a visualisation of an image from each of the classes. 
 
 ![all traffic signs](images/all-traffic-signs.png)
 
