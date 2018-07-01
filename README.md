@@ -1,5 +1,5 @@
 # Traffic Sign Classification
-![Project 1](https://img.shields.io/badge/Computer%20Vision%20Fundamentals-Finished-green.svg?longCache=true&style=for-the-badge)
+
 - - - -
 The goals / steps of this project are the following:
 
@@ -96,4 +96,4 @@ The incorrect prediction was for the road works image. This can be corrected in 
 
 ### Conclusion
 
-I was able to achieve a validation accuracy of **98.7** and a test accuracy	of **96.7** with the current model. This was higher than the initial goal for the project. Since this was my first attempt at designing a neural network it took me around two weeks to finish the project. A number of lessons were learned which will lead to better implementations in the future. 
+I was able to achieve a validation accuracy of **98.7** and a test accuracy	of **96.7** with the current model. This was higher than the initial goal for the project. A number of lessons were learned which will lead to better implementations in the future. 
